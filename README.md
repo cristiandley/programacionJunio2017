@@ -44,3 +44,7 @@ docker pull mysql:lastest
 docker run --name ParcialFacultad -e MYSQL_ROOT_PASSWORD=root -d mysql:tag
 
 ```
+
+### Driver jdbc:MySQL
+
+version: 5.1.40

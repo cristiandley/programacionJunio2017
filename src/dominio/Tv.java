@@ -42,7 +42,20 @@ public class Tv extends Aviso{
 	public void setFranjaHoraria(FranjaHoraria franjaHoraria) {
 		this.franjaHoraria = franjaHoraria;
 	}
+	
+	/**
+	  * -----------------------------------------------
+	  *   OVERRIDE METHOD ABSTRAC CLASS 'Aviso'
+	  * -----------------------------------------------
+	 */
 
+	@Override
+	void calcularImporte() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 	
 	
 }

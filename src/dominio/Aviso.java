@@ -8,64 +8,17 @@ import java.time.LocalDate;
  */
 public abstract class Aviso {
 
-    private long id;
+    protected long id;
 
-    private String descripcion;
+    protected String descripcion;
 
-    private LocalDate fechaPublicacion;
+    protected LocalDate fechaPublicacion;
    
     /**
      * -----------------------------------------------
 	 * 				CALCULAR IMPORTE
 	 * -----------------------------------------------
-     * 
-     * calcula el importe dado segun la franja horaria
-     * 
-     * @return importeCalculado
      */
    
-    public double calcularImporte(){
-    	double importeCalculado = 0;
-		return importeCalculado;
-    }
-    
-    /**
-	 * -----------------------------------------------
-	 * 				GETTERS & SETTERS
-	 * -----------------------------------------------
-	 */
-
-
-	public long getId() {
-		return id;
-	}
-
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-
-	public String getDescripcion() {
-		return descripcion;
-	}
-
-
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
-	}
-
-
-	public LocalDate getFechaPublicacion() {
-		return fechaPublicacion;
-	}
-
-
-	public void setFechaPublicacion(LocalDate fechaPublicacion) {
-		this.fechaPublicacion = fechaPublicacion;
-	}
-    
-    
-    
-
+    abstract void calcularImporte();
 }

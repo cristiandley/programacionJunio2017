@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  * @author Cristian Leyes
- *
+ * {@link https://github.com/cristiandley/programacionJunio2017}
  */
 public class App {
 

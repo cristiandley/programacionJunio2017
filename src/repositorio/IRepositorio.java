@@ -1,10 +1,14 @@
 package repositorio;
 
+import java.awt.List;
+
 /**
- * Created by Cristian Leyes on 27/06/17.
+ * @author Cristian Leyes
+ * {@link https://github.com/cristiandley/programacionJunio2017}
  */
 public interface IRepositorio {
 
-    
+	void guardar(Object objeto);
+	List consultar();
 
 }

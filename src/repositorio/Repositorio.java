@@ -1,5 +1,6 @@
 package repositorio;
 
+import java.awt.List;
 import java.sql.Connection;
 
 /**
@@ -9,20 +10,41 @@ public class Repositorio implements IRepositorio{
 
     private Connection conexion = null;
 
-    /* Los datos de la base de datos con la que vamos a trabajar:
-     * url de conexion (donde esta ubicada fisicamente la base de datos), usuario y password
-     */
-    private String url = "jdbc:mysql://localhost:3306/parcial";
+    /**
+	  * -----------------------------------------------
+	  *     		DATOS CONEXION DB
+	  * -----------------------------------------------
+	 */
     private String user = "root";
     private String password = "root";
+    private String url = "jdbc:mysql://localhost:3306/parcial";
 
     public Repositorio() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
+
+    /**
+	  * -----------------------------------------------
+	  *   OVERRIDE METHODS INTERFACE 'IRepositorio'
+	  * -----------------------------------------------
+	 */
+    
+	@Override
+	public void guardar(Object objeto) {
+		
+		
+		
+	}
+
+	@Override
+	public List consultar() {
+		
+		
+		return null;
+	}
 
 }
