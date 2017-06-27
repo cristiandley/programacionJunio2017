@@ -30,7 +30,9 @@
 ### Motor MySQL dockerizado (ParcialFacultad)
 
 Usuario: root
+
 Pass: root
+
 Port: 3306
 
 [hub mysql](https://hub.docker.com/_/mysql/)

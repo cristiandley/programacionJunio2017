@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 /**
  * @author Cristian Leyes
- *
+ * {@link https://github.com/cristiandley/programacionJunio2017}
  */
 public abstract class Aviso {
 
