@@ -1,6 +1,9 @@
 package repositorio;
 
-import java.awt.List;
+import java.util.List;
+import java.util.ArrayList;
+
+import dominio.Tv;
 
 /**
  * @author Cristian Leyes
@@ -9,6 +12,6 @@ import java.awt.List;
 public interface IRepositorio {
 
 	void guardar(Object objeto);
-	List consultar();
+	List<?> consultar();
 
 }

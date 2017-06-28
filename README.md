@@ -41,7 +41,7 @@ Port: 3306
 
 docker pull mysql:lastest
 
-docker run --name ParcialFacultad -e MYSQL_ROOT_PASSWORD=root -d mysql:tag
+docker run --name ParcialFacultad -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
 
 ```
 

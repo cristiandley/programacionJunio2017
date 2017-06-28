@@ -8,11 +8,17 @@ import java.time.LocalDate;
  */
 public abstract class Aviso {
 
-    protected long id;
+	protected long id;
 
     protected String descripcion;
 
     protected LocalDate fechaPublicacion;
+
+    private void asignarValores(Long id, String descripcion, LocalDate fechaPublicacion) {
+        setId(id);
+        setDescripcion(descripcion);
+        setFechaPublicacion(fechaPublicacion);
+    }
    
     /**
      * -----------------------------------------------
@@ -20,5 +26,37 @@ public abstract class Aviso {
 	 * -----------------------------------------------
      */
    
-    abstract void calcularImporte();
+    abstract double calcularImporte();
+    
+    /**
+	 * -----------------------------------------------
+	 * 				GETTERS & SETTERS
+	 * -----------------------------------------------
+	 */
+    
+    public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public LocalDate getFechaPublicacion() {
+		return fechaPublicacion;
+	}
+
+	public void setFechaPublicacion(LocalDate fechaPublicacion) {
+		this.fechaPublicacion = fechaPublicacion;
+	}
+
+    
 }
