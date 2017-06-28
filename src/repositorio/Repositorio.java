@@ -125,7 +125,7 @@ public class Repositorio implements IRepositorio {
 			/* RECORREMOS CADA REGISTRO */
 			while (rs.next()) {
 				
-				Tv tv = new Tv(null, null, null, null, null);
+				Tv tv = new Tv();
 				tv.setId(rs.getLong(1));
 				tv.setDescripcion(rs.getString(2));
 				tv.setFechaPublicacion(rs.getDate(3).toLocalDate());

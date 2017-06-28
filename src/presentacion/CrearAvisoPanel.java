@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -123,32 +124,27 @@ public class CrearAvisoPanel extends JPanel implements IFormAviso {
 
 	@Override
 	public LocalDate getFechaPublicacion() {
-		// TODO Auto-generated method stub
-		return null;
+		return LocalDate.parse(this.txtFechaPublicacion.getText(), DateTimeFormatter.ofPattern("dd/MM/yyyy")); 
 	}
 
 	@Override
 	public String getDescripcion() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.txtDescripcion.getText();
 	}
 
 	@Override
 	public Integer getDuracionPorSegundo() {
-		// TODO Auto-generated method stub
-		return null;
+		return Integer.parseInt(this.txtDuracionPorSegundo.getText());
 	}
 
 	@Override
 	public Double getImportePorSegundo() {
-		// TODO Auto-generated method stub
-		return null;
+		return Double.parseDouble(this.txtImportePorSegundo.getText());
 	}
 
 	@Override
 	public FranjaHoraria getFranjaHoraria() {
-		// TODO Auto-generated method stub
-		return null;
+		return (FranjaHoraria)this.cbxFranjaHoraria.getSelectedItem();
 	}
 
 }

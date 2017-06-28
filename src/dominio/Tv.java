@@ -14,14 +14,8 @@ public class Tv extends Aviso{
 	
 	private FranjaHoraria franjaHoraria;
 
-	public Tv(String descripcion, LocalDate fechaPublicacion, Integer duracionPorSegundo, Double importePorSegundo,
-			FranjaHoraria franjaHoraria) {
+	public Tv() {
 		super();
-		this.descripcion = descripcion;
-		this.fechaPublicacion = fechaPublicacion;
-		this.duracionPorSegundo = duracionPorSegundo;
-		this.importePorSegundo = importePorSegundo;
-		this.franjaHoraria = franjaHoraria;
 	}
 	
 	/**

@@ -30,7 +30,7 @@ public class Servicio implements IServicio {
 	@Override
 	public void cargar(IFormAviso formulario) {
 		
-		Tv tv = new Tv(null, null, null, null, null);
+		Tv tv = new Tv();
 		tv.setDescripcion(formulario.getDescripcion());
 		tv.setFechaPublicacion(formulario.getFechaPublicacion());
 		tv.setDuracionPorSegundo(formulario.getDuracionPorSegundo());
