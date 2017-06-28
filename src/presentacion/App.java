@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 public class App {
 
 	private JFrame frmGestionAvisosPublicitarios;
-	private JPanel contenedor;
+	static JPanel contenedor;
 
 	/**
 	 * Launch the application.

@@ -67,12 +67,13 @@ public class Servicio implements IServicio {
 		 */
 		DefaultTableModel modelo = new DefaultTableModel();
 
-		String[] columnas = { "Descripcion", "Fehca Publicacion", "Duracion (s)", "Costo/s", "Horario", "Importe Total" };
+		String[] columnas = { "ID", "Descripcion", "Fecha Publicacion", "Duracion (s)", "Costo/s", "Horario", "Importe Total" };
 
 		modelo.setColumnIdentifiers(columnas);
 
 		for (Tv tv: avisos) {
 			Object[] row = { 
+					tv.getId(),
 					tv.getDescripcion(),
 					tv.getFechaPublicacion(),
 					tv.getDuracionPorSegundo(),
