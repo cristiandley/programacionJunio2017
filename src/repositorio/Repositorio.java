@@ -1,6 +1,9 @@
 package repositorio;
 
 import java.util.List;
+
+import javax.swing.JOptionPane;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -76,6 +79,7 @@ public class Repositorio implements IRepositorio {
 			/* Ejecutamos la Query */
 			stmt.executeUpdate();
 			stmt.close();
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -121,7 +125,7 @@ public class Repositorio implements IRepositorio {
 			/* RECORREMOS CADA REGISTRO */
 			while (rs.next()) {
 				
-				Tv tv = new Tv();
+				Tv tv = new Tv(null, null, null, null, null);
 				tv.setId(rs.getLong(1));
 				tv.setDescripcion(rs.getString(2));
 				tv.setFechaPublicacion(rs.getDate(3).toLocalDate());

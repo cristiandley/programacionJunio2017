@@ -29,7 +29,15 @@ public class Servicio implements IServicio {
 
 	@Override
 	public void cargar(IFormAviso formulario) {
-		// TODO Auto-generated method stub
+		
+		Tv tv = new Tv(null, null, null, null, null);
+		tv.setDescripcion(formulario.getDescripcion());
+		tv.setFechaPublicacion(formulario.getFechaPublicacion());
+		tv.setDuracionPorSegundo(formulario.getDuracionPorSegundo());
+		tv.setImportePorSegundo(formulario.getImportePorSegundo());
+		tv.setFranjaHoraria(formulario.getFranjaHoraria());
+		
+		repositorio.guardar(tv);
 
 	}
 

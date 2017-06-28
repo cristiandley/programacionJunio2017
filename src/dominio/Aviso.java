@@ -14,11 +14,6 @@ public abstract class Aviso {
 
     protected LocalDate fechaPublicacion;
 
-    private void asignarValores(Long id, String descripcion, LocalDate fechaPublicacion) {
-        setId(id);
-        setDescripcion(descripcion);
-        setFechaPublicacion(fechaPublicacion);
-    }
    
     /**
      * -----------------------------------------------
